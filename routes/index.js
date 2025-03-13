@@ -21,13 +21,13 @@ router.get("/project.html", function (req, res, next) {
   res.render("project");
 });
 
-// router.get("/project.html", function (req, res, next) {
-//   res.render("project");
-// });
+router.get("/contact.html", function (req, res, next) {
+  res.render("contact");
+});
 
-// router.get("/project.html", function (req, res, next) {
-//   res.render("project");
-// });
+router.get("/data.html", function (req, res, next) {
+  res.render("data");
+});
 
 // router.get("/project.html", function (req, res, next) {
 //   res.render("project");
