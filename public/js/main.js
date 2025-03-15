@@ -512,24 +512,25 @@
         const heroTitles = document.querySelectorAll(".tmp-title-split");
         const heroSubtitles = document.querySelectorAll(".hero__sub-title");
         heroTitles.forEach((title, index) => {
-          const subtitle = heroSubtitles[index]; 
+          const subtitle = heroSubtitles[index];
 
           const splitTitle = new SplitText(title, { type: "chars" });
           const splitSubtitle = subtitle
             ? new SplitText(subtitle, { type: "chars words" })
             : null;
-          gsap.timeline({
-            scrollTrigger: {
-              trigger: title,
-              start: "top 80%",
-              end: "bottom 60%",
-              toggleActions: "play none none none", 
-            },
-          })
+          gsap
+            .timeline({
+              scrollTrigger: {
+                trigger: title,
+                start: "top 80%",
+                end: "bottom 60%",
+                toggleActions: "play none none none",
+              },
+            })
             .from(splitTitle.chars, {
               duration: 0.2,
               x: -10,
-              autoAlpha: .02,
+              autoAlpha: 0.02,
               stagger: 0.02,
             })
             .from(
@@ -540,7 +541,7 @@
                 autoAlpha: 0,
                 stagger: 0.01,
               },
-              "-=1" 
+              "-=1"
             );
         });
       });
@@ -548,24 +549,25 @@
         const heroTitles = document.querySelectorAll(".tmp-title-split-2");
         const heroSubtitles = document.querySelectorAll(".hero__sub-title");
         heroTitles.forEach((title, index) => {
-          const subtitle = heroSubtitles[index]; 
+          const subtitle = heroSubtitles[index];
           const splitTitle = new SplitText(title, { type: "chars" });
           const splitSubtitle = subtitle
             ? new SplitText(subtitle, { type: "chars words" })
             : null;
 
-          gsap.timeline({
-            scrollTrigger: {
-              trigger: title, 
-              start: "top 80%", 
-              end: "bottom 60%", 
-              toggleActions: "play none none no"
-            },
-          })
+          gsap
+            .timeline({
+              scrollTrigger: {
+                trigger: title,
+                start: "top 80%",
+                end: "bottom 60%",
+                toggleActions: "play none none no",
+              },
+            })
             .from(splitTitle.chars, {
               duration: 0.2,
               x: -10,
-              autoAlpha: .06,
+              autoAlpha: 0.06,
               stagger: 0.01,
             })
             .from(
@@ -573,76 +575,73 @@
               {
                 duration: 0.2,
                 x: 100,
-                autoAlpha: .06,
+                autoAlpha: 0.06,
                 stagger: 0.01,
               },
               "-=1"
             );
         });
       });
-
-
-
     },
 
     animationOnHover: function () {
-      let cards = document.querySelectorAll('.tmponhover');
+      let cards = document.querySelectorAll(".tmponhover");
       cards.forEach((tmpOnHover) => {
         tmpOnHover.onmousemove = function (e) {
           let x = e.pageX - tmpOnHover.offsetLeft;
           let y = e.pageY - tmpOnHover.offsetTop;
-          tmpOnHover.style.setProperty('--x', x + 'px');
-          tmpOnHover.style.setProperty('--y', y + 'px');
+          tmpOnHover.style.setProperty("--x", x + "px");
+          tmpOnHover.style.setProperty("--y", y + "px");
         };
       });
     },
 
     odoMeter: function () {
-
       $(document).ready(function () {
         function isInViewport(element) {
           const rect = element.getBoundingClientRect();
           return (
             rect.top >= 0 &&
-            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+            rect.bottom <=
+              (window.innerHeight || document.documentElement.clientHeight)
           );
         }
 
         function triggerOdometer(element) {
           const $element = $(element);
-          if (!$element.hasClass('odometer-triggered')) {
-            const countNumber = $element.attr('data-count');
+          if (!$element.hasClass("odometer-triggered")) {
+            const countNumber = $element.attr("data-count");
             $element.html(countNumber);
-            $element.addClass('odometer-triggered');
+            $element.addClass("odometer-triggered");
           }
         }
 
         function handleOdometer() {
-          $('.odometer').each(function () {
+          $(".odometer").each(function () {
             if (isInViewport(this)) {
               triggerOdometer(this);
             }
           });
         }
         handleOdometer();
-        $(window).on('scroll', function () {
+        $(window).on("scroll", function () {
           handleOdometer();
         });
       });
-
-
     },
 
     titleSplit_2: function () {
-      if ($('.tmp-title-split').length) {
+      if ($(".tmp-title-split").length) {
         let staggerAmount = 0.03,
           translateXValue = 20,
           delayValue = 0.1,
           easeType = "power2.out",
-          animatedTextElements = document.querySelectorAll('.tmp-title-split');
+          animatedTextElements = document.querySelectorAll(".tmp-title-split");
 
         animatedTextElements.forEach((element) => {
-          let animationSplitText = new SplitText(element, { type: "chars, words" });
+          let animationSplitText = new SplitText(element, {
+            type: "chars, words",
+          });
           gsap.from(animationSplitText.chars, {
             duration: 1,
             delay: delayValue,
@@ -657,9 +656,8 @@
     },
 
     tiltAnimation: function () {
-
       $(document).ready(function () {
-        let lengthTilt = document.getElementsByClassName('tilt-container');
+        let lengthTilt = document.getElementsByClassName("tilt-container");
         if (lengthTilt.length) {
           const container = document.querySelector(".tilt-container");
           const card = document.querySelector(".tilt-card");
@@ -681,11 +679,7 @@
           });
         }
       });
-
-
-
     },
-
   };
 
   tmPk.m();
@@ -697,14 +691,14 @@ function updateDimensions() {
 }
 
 updateDimensions();
-window.addEventListener('resize', updateDimensions);
+window.addEventListener("resize", updateDimensions);
 
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener("DOMContentLoaded", function () {
   var box = document.querySelector(".scrollToTop");
   if (box) {
     var water = box.querySelector(".water");
 
-    window.addEventListener('scroll', function () {
+    window.addEventListener("scroll", function () {
       var scrollPosition = window.scrollY;
       var percent = Math.min(
         Math.floor((scrollPosition / documentHeight) * 100),
@@ -713,16 +707,16 @@ document.addEventListener('DOMContentLoaded', function () {
       water.style.transform = "translate(0," + (100 - percent) + "%)";
 
       if (scrollPosition >= 200) {
-        box.style.display = 'block';
+        box.style.display = "block";
       } else {
-        box.style.display = 'none';
+        box.style.display = "none";
       }
     });
 
-    box.addEventListener('click', function () {
+    box.addEventListener("click", function () {
       window.scrollTo({
         top: 0,
-        behavior: 'smooth'
+        behavior: "smooth",
       });
     });
   }
@@ -732,9 +726,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   document.body.classList.add("preloader-active");
-  window.addEventListener('load', function () {
+  window.addEventListener("load", function () {
     removePreloader();
   });
 });
-
-
