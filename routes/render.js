@@ -25,7 +25,7 @@ router.get("/video-detail.html", function (req, res, next) {
   res.render("video-detail");
 });
 
-router.get("/:endpoint", async function (req, res, next) {
+router.get("/project/:endpoint", async function (req, res, next) {
   try {
     const endpoint = req.params.endpoint;
     const sql = "SELECT * FROM thong_tin_du_an WHERE endpoint = ?";

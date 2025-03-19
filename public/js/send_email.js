@@ -6,3 +6,9 @@ document.addEventListener("DOMContentLoaded", function () {
     form.action = `${baseUrlApi}/index/send-email`;
   });
 });
+
+const current_date = document.getElementById("current-date");
+const d = new Date();
+current_date.textContent = `Ngày update: ${d.getDate()}/${
+  d.getMonth() + 1
+}/${d.getFullYear()}`;

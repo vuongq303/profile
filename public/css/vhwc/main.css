@@ -305,7 +305,6 @@
 }
 
 .elementor-47 .elementor-element.elementor-element-4fdd4b08 .elementor-heading-title {
-    color: var(--e-global-color-b6ec1dc);
     font-family: "Open Sans", Sans-serif;
     font-size: 16px;
     font-weight: 700;
@@ -345,7 +344,6 @@
 }
 
 .elementor-47 .elementor-element.elementor-element-10b54480 .elementor-heading-title {
-    color: var(--e-global-color-b6ec1dc);
     font-family: "Roboto Condensed", Sans-serif;
     font-size: 24px;
     font-weight: 900;
@@ -382,20 +380,6 @@ body .elementor-47 .elementor-element.elementor-element-6799ccf0 .elementor-labe
     padding-bottom: 0
 }
 
-.elementor-47 .elementor-element.elementor-element-6799ccf0 .elementor-field-group>label,
-.elementor-47 .elementor-element.elementor-element-6799ccf0 .elementor-field-subgroup label {
-    color: var(--e-global-color-primary)
-}
-
-.elementor-47 .elementor-element.elementor-element-6799ccf0 .elementor-field-type-html {
-    padding-bottom: 0;
-    color: var(--e-global-color-primary)
-}
-
-.elementor-47 .elementor-element.elementor-element-6799ccf0 .elementor-field-group .elementor-field {
-    color: var(--e-global-color-primary)
-}
-
 .elementor-47 .elementor-element.elementor-element-6799ccf0 .elementor-field-group:not(.elementor-field-type-upload) .elementor-field:not(.elementor-select-wrapper) {
     background-color: #fff;
     border-width: 0
@@ -413,14 +397,6 @@ body .elementor-47 .elementor-element.elementor-element-6799ccf0 .elementor-labe
     line-height: 24px;
     border-radius: 100px;
     padding: 12px 32px
-}
-
-.elementor-47 .elementor-element.elementor-element-6799ccf0 .e-form__buttons__wrapper__button-next {
-    color: #fff
-}
-
-.elementor-47 .elementor-element.elementor-element-6799ccf0 .elementor-button[type=submit] {
-    color: #fff
 }
 
 .elementor-47 .elementor-element.elementor-element-6799ccf0 .elementor-button[type=submit] svg * {
@@ -852,7 +828,6 @@ body:not(.rtl) .elementor-47 .elementor-element.elementor-element-960b537 .eleme
 .elementor-47 .elementor-element.elementor-element-5b44804:not(.elementor-motion-effects-element-type-background),
 .elementor-47 .elementor-element.elementor-element-5b44804>.elementor-motion-effects-container>.elementor-motion-effects-layer {
     background-color: transparent;
-    background-image: linear-gradient(180deg, var(--e-global-color-primary) 0%, var(--e-global-color-primary) 100%)
 }
 
 .elementor-47 .elementor-element.elementor-element-5b44804,
@@ -3226,7 +3201,7 @@ body .elementor-47 .elementor-element.elementor-element-3a4655a .elementor-label
     text-transform: uppercase;
     line-height: 24px;
     fill: var(--e-global-color-b6ec1dc);
-    color: var(--e-global-color-b6ec1dc)
+    color: blue;
 }
 
 .elementor-47 .elementor-element.elementor-element-739ca15d {
@@ -3266,11 +3241,6 @@ body .elementor-47 .elementor-element.elementor-element-3a4655a .elementor-label
     --padding-bottom: 40px;
     --padding-left: 10px;
     --padding-right: 10px
-}
-
-.elementor-47 .elementor-element.elementor-element-15f591e5:not(.elementor-motion-effects-element-type-background),
-.elementor-47 .elementor-element.elementor-element-15f591e5>.elementor-motion-effects-container>.elementor-motion-effects-layer {
-    background-color: var(--e-global-color-primary)
 }
 
 .elementor-47 .elementor-element.elementor-element-15f591e5,
@@ -3354,7 +3324,7 @@ body .elementor-47 .elementor-element.elementor-element-3a4655a .elementor-label
     text-transform: uppercase;
     line-height: 24px;
     fill: var(--e-global-color-b6ec1dc);
-    color: var(--e-global-color-b6ec1dc)
+    color: blue;
 }
 
 .elementor-47 .elementor-element.elementor-element-df59664 {
@@ -3422,7 +3392,7 @@ body .elementor-47 .elementor-element.elementor-element-3a4655a .elementor-label
     text-transform: uppercase;
     line-height: 24px;
     fill: var(--e-global-color-b6ec1dc);
-    color: var(--e-global-color-b6ec1dc)
+    color: blue;
 }
 
 .elementor-47 .elementor-element.elementor-element-91a477b {
@@ -3464,10 +3434,6 @@ body .elementor-47 .elementor-element.elementor-element-3a4655a .elementor-label
     --padding-right: 10px
 }
 
-.elementor-47 .elementor-element.elementor-element-c33dc25:not(.elementor-motion-effects-element-type-background),
-.elementor-47 .elementor-element.elementor-element-c33dc25>.elementor-motion-effects-container>.elementor-motion-effects-layer {
-    background-color: var(--e-global-color-primary)
-}
 
 .elementor-47 .elementor-element.elementor-element-c33dc25,
 .elementor-47 .elementor-element.elementor-element-c33dc25:before {
@@ -3550,7 +3516,7 @@ body .elementor-47 .elementor-element.elementor-element-3a4655a .elementor-label
     text-transform: uppercase;
     line-height: 24px;
     fill: var(--e-global-color-b6ec1dc);
-    color: var(--e-global-color-b6ec1dc)
+    color: blue;
 }
 
 .elementor-47 .elementor-element.elementor-element-d6c1c3d {
@@ -3618,7 +3584,7 @@ body .elementor-47 .elementor-element.elementor-element-3a4655a .elementor-label
     text-transform: uppercase;
     line-height: 24px;
     fill: var(--e-global-color-b6ec1dc);
-    color: var(--e-global-color-b6ec1dc)
+    color: blue;
 }
 
 .elementor-47 .elementor-element.elementor-element-570530a {
@@ -3761,7 +3727,7 @@ body .elementor-47 .elementor-element.elementor-element-3a4655a .elementor-label
     text-transform: uppercase;
     line-height: 24px;
     fill: var(--e-global-color-b6ec1dc);
-    color: var(--e-global-color-b6ec1dc)
+    color: blue
 }
 
 .elementor-47 .elementor-element.elementor-element-b9269b2 {
@@ -3801,11 +3767,6 @@ body .elementor-47 .elementor-element.elementor-element-3a4655a .elementor-label
     --padding-bottom: 40px;
     --padding-left: 10px;
     --padding-right: 10px
-}
-
-.elementor-47 .elementor-element.elementor-element-459aff6:not(.elementor-motion-effects-element-type-background),
-.elementor-47 .elementor-element.elementor-element-459aff6>.elementor-motion-effects-container>.elementor-motion-effects-layer {
-    background-color: var(--e-global-color-primary)
 }
 
 .elementor-47 .elementor-element.elementor-element-459aff6,
@@ -3909,7 +3870,7 @@ body .elementor-47 .elementor-element.elementor-element-3a4655a .elementor-label
     text-transform: uppercase;
     line-height: 24px;
     fill: var(--e-global-color-b6ec1dc);
-    color: var(--e-global-color-b6ec1dc)
+    color: blue;
 }
 
 .elementor-47 .elementor-element.elementor-element-496996b8 {
@@ -4317,11 +4278,6 @@ body .elementor-47 .elementor-element.elementor-element-6b931f53 .elementor-labe
     --padding-right: 10px
 }
 
-.elementor-47 .elementor-element.elementor-element-26b6fe74:not(.elementor-motion-effects-element-type-background),
-.elementor-47 .elementor-element.elementor-element-26b6fe74>.elementor-motion-effects-container>.elementor-motion-effects-layer {
-    background-color: var(--e-global-color-primary)
-}
-
 .elementor-47 .elementor-element.elementor-element-26b6fe74:before,
 .elementor-47 .elementor-element.elementor-element-26b6fe74>.elementor-background-video-container:before,
 .elementor-47 .elementor-element.elementor-element-26b6fe74>.e-con-inner>.elementor-background-video-container:before,
@@ -4641,10 +4597,6 @@ body.rtl .elementor-47 .elementor-element.elementor-element-4a701e15 {
     --padding-right: 10px
 }
 
-.elementor-47 .elementor-element.elementor-element-a14a4d3:not(.elementor-motion-effects-element-type-background),
-.elementor-47 .elementor-element.elementor-element-a14a4d3>.elementor-motion-effects-container>.elementor-motion-effects-layer {
-    background-color: var(--e-global-color-primary)
-}
 
 .elementor-47 .elementor-element.elementor-element-a14a4d3:before,
 .elementor-47 .elementor-element.elementor-element-a14a4d3>.elementor-background-video-container:before,
@@ -5450,11 +5402,6 @@ body.rtl .elementor-47 .elementor-element.elementor-element-5e48109c {
     --padding-bottom: 4px;
     --padding-left: 4px;
     --padding-right: 4px
-}
-
-.elementor-47 .elementor-element.elementor-element-17882cd0:not(.elementor-motion-effects-element-type-background),
-.elementor-47 .elementor-element.elementor-element-17882cd0>.elementor-motion-effects-container>.elementor-motion-effects-layer {
-    background-color: #09f
 }
 
 .elementor-47 .elementor-element.elementor-element-17882cd0,
