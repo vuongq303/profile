@@ -322,6 +322,8 @@ p {
   margin: 0 0 40px;
 }
 
+
+
 @media only screen and (max-width: 767px) {
   p {
     margin: 0 0 20px;
@@ -12637,7 +12639,7 @@ body.sal-disabled [data-sal|=flip] {
 }
 
 .header-one .header-content .logo img {
-  max-width: max-content;
+  max-width: 200px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -13606,6 +13608,12 @@ header.header-full-width.header--sticky.sticky {
     100% {
       transform: rotate(360deg) translateX(1em) rotate(-360deg) scale(1.2);
     }
+  }
+
+  .tmp-scroll-trigger .img-project {
+    object-fit: cover;
+    width: 100%;
+    height: 450px;
   }
 
   .tmp-scroll-trigger:is(.tmp-zoom-in, .zoom_out, .tmp-fade-in, .slide_in) {

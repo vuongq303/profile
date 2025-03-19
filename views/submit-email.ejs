@@ -1,328 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Nhà môi giới chuyên nghiệp, chuyên tư vấn bất động sản" />
-  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.svg" />
-  <title>Long Nasa</title>
-  <link rel="stylesheet" href="https://longnasa.com/css/vendor/fontawesome.css" />
-  <link rel="stylesheet" href="https://longnasa.com/css/plugins/swiper.css" />
-  <link rel="stylesheet" href="https://longnasa.com/css/plugins/odometer.css" />
-  <link rel="stylesheet" href="https://longnasa.com/css/vendor/animate.min.css" />
-  <link rel="stylesheet" href="https://longnasa.com/css/vendor/bootstrap.min.css" />
-  <link rel="stylesheet" href="https://longnasa.com/css/style.css" />
-</head>
+<%- include('head') %>
 
-<body>
-  <header class="tmp-header-area-start header-one header--sticky header--transparent">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="header-content">
-            <div class="logo">
-              <a href="/">
-                <img class="logo-dark" src="https://longnasa.com/images/logo/white-logo-reeni.png"
-                  alt="Image for developers and freelancers" />
-                <img class="logo-white" src="https://longnasa.com/images/logo/logo-white.png"
-                  alt="Image for developers and freelancers" />
-              </a>
+  <body>
+    <%- include('header') %>
+
+      <section class="blog-and-news-are tmp-section-gap">
+        <div class="container">
+          <div class="section-head mb--60">
+            <div class="section-sub-title center-title tmp-scroll-trigger tmp-fade-in animation-order-1">
+              <span class="subtitle">Thông Báo</span>
             </div>
-            <nav class="tmp-mainmenu-nav d-none d-xl-block">
-              <ul class="tmp-mainmenu">
-                <li>
-                  <a href="/">Trang chủ</a>
-                </li>
-                <li>
-                  <a href="project.html">Thông tin dự án</a>
-                </li>
-                <li>
-                  <a href="data.html">Bảng hàng</a>
-                </li>
-                <li>
-                  <a href="video.html">Video</a>
-                </li>
-
-                <li>
-                  <a href="contact.html">Liên hệ</a>
-                </li>
-              </ul>
-            </nav>
-            <div class="tmp-header-right">
-              <div class="social-share-wrapper d-none d-md-block">
-                <div class="social-link">
-                  <a href="https://t.me/longnasa"><i class="fa-brands fa-telegram"></i>
-                    <a href="https://www.tiktok.com/@longnasa"><i class="fa-brands fa-tiktok"></i></a>
-                    <a href="https://www.facebook.com/caohaithanhlong"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="http://zalo.me/caohaithanhlong"><img src="https://longnasa.com/images/icons/zalo.png"
-                        alt=""></a>
+            <h2 class="title split-collab tmp-scroll-trigger tmp-fade-in animation-order-2">
+              <%= message1 %> <br>
+                <%= message2%>
+            </h2>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-6">
+              <div class="blog-card tmp-hover-link image-box-hover tmp-scroll-trigger tmp-fade-in animation-order-1">
+                <div class="img-box">
+                  <a href="video-detail.html">
+                    <img class="w-100" src="<%-include('base')%>/images/blog/blog-img-1.jpg" alt="Blog Thumbnail" />
+                  </a>
+                  <ul class="blog-tags">
+                    <li>
+                      <span class="tag-icon"><i class="fa-regular fa-user"></i></span>Mesbah
+                    </li>
+                    <li>
+                      <span class="tag-icon"><i class="fa-solid fa-calendar-days"></i></span>April 10
+                    </li>
+                  </ul>
                 </div>
-              </div>
-              <div class="actions-area">
-                <div class="tmp-side-collups-area d-none d-xl-block">
-                  <button class="tmp-menu-bars tmp_button_active">
-                    <i class="fa-regular fa-bars-staggered"></i>
-                  </button>
-                </div>
-                <div class="tmp-side-collups-area d-block d-xl-none">
-                  <button class="tmp-menu-bars humberger_menu_active">
-                    <i class="fa-regular fa-bars-staggered"></i>
-                  </button>
+                <div class="blog-content-wrap">
+                  <h3 class="blog-title">
+                    <a class="link" href="video-detail.html">Inspiring the World, One Project at a Time for the man</a>
+                  </h3>
+                  <div class="more-btn tmp-link-animation">
+                    <a href="video-detail.html" class="read-more-btn">Read More
+                      <span class="read-more-icon"><i class="fa-solid fa-angle-right"></i></span></a>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <!-- Tpm Blog and news Area Start -->
-  <section class="blog-and-news-are tmp-section-gap">
-    <div class="container">
-      <div class="section-head mb--60">
-        <div class="section-sub-title center-title tmp-scroll-trigger tmp-fade-in animation-order-1">
-          <span class="subtitle">Thông Báo</span>
-        </div>
-        <h2 class="title split-collab tmp-scroll-trigger tmp-fade-in animation-order-2">
-          <%= message1 %> <br>
-            <%= message2%>
-        </h2>
-      </div>
-      <div class="row">
-        <div class="col-lg-4 col-md-6 col-sm-6">
-          <div class="blog-card tmp-hover-link image-box-hover tmp-scroll-trigger tmp-fade-in animation-order-1">
-            <div class="img-box">
-              <a href="video-detail.html">
-                <img class="w-100" src="images/blog/blog-img-1.jpg" alt="Blog Thumbnail" />
-              </a>
-              <ul class="blog-tags">
-                <li>
-                  <span class="tag-icon"><i class="fa-regular fa-user"></i></span>Mesbah
-                </li>
-                <li>
-                  <span class="tag-icon"><i class="fa-solid fa-calendar-days"></i></span>April 10
-                </li>
-              </ul>
+            <div class="col-lg-4 col-md-6 col-sm-6">
+              <div class="blog-card tmp-hover-link image-box-hover tmp-scroll-trigger tmp-fade-in animation-order-2">
+                <div class="img-box">
+                  <a href="video-detail.html">
+                    <img class="w-100" src="<%-include('base')%>/images/blog/blog-img-2.jpg" alt="Blog Thumbnail" />
+                  </a>
+                  <ul class="blog-tags">
+                    <li>
+                      <span class="tag-icon"><i class="fa-regular fa-user"></i></span>Mesbah
+                    </li>
+                    <li>
+                      <span class="tag-icon"><i class="fa-solid fa-calendar-days"></i></span>April 10
+                    </li>
+                  </ul>
+                </div>
+                <div class="blog-content-wrap">
+                  <h3 class="blog-title">
+                    <a class="link" href="video-detail.html">Let’s bring your ideas to life! Contact me, and let’s</a>
+                  </h3>
+                  <div class="more-btn tmp-link-animation">
+                    <a href="video-detail.html" class="read-more-btn">Read More
+                      <span class="read-more-icon"><i class="fa-solid fa-angle-right"></i></span></a>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="blog-content-wrap">
-              <h3 class="blog-title">
-                <a class="link" href="video-detail.html">Inspiring the World, One Project at a Time for the man</a>
-              </h3>
-              <div class="more-btn tmp-link-animation">
-                <a href="video-detail.html" class="read-more-btn">Read More
-                  <span class="read-more-icon"><i class="fa-solid fa-angle-right"></i></span></a>
+            <div class="col-lg-4 col-md-6 col-sm-6">
+              <div class="blog-card tmp-hover-link image-box-hover tmp-scroll-trigger tmp-fade-in animation-order-3">
+                <div class="img-box">
+                  <a href="video-detail.html">
+                    <img class="w-100" src="<%-include('base')%>/images/blog/blog-img-3.jpg" alt="Blog Thumbnail" />
+                  </a>
+                  <ul class="blog-tags">
+                    <li>
+                      <span class="tag-icon"><i class="fa-regular fa-user"></i></span>Mesbah
+                    </li>
+                    <li>
+                      <span class="tag-icon"><i class="fa-solid fa-calendar-days"></i></span>April 10
+                    </li>
+                  </ul>
+                </div>
+                <div class="blog-content-wrap">
+                  <h3 class="blog-title">
+                    <a class="link" href="video-detail.html">Each one showcases my approach and dedication man</a>
+                  </h3>
+                  <div class="more-btn tmp-link-animation">
+                    <a href="video-detail.html" class="read-more-btn">Read More
+                      <span class="read-more-icon"><i class="fa-solid fa-angle-right"></i></span></a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 col-sm-6">
-          <div class="blog-card tmp-hover-link image-box-hover tmp-scroll-trigger tmp-fade-in animation-order-2">
-            <div class="img-box">
-              <a href="video-detail.html">
-                <img class="w-100" src="images/blog/blog-img-2.jpg" alt="Blog Thumbnail" />
-              </a>
-              <ul class="blog-tags">
-                <li>
-                  <span class="tag-icon"><i class="fa-regular fa-user"></i></span>Mesbah
-                </li>
-                <li>
-                  <span class="tag-icon"><i class="fa-solid fa-calendar-days"></i></span>April 10
-                </li>
-              </ul>
-            </div>
-            <div class="blog-content-wrap">
-              <h3 class="blog-title">
-                <a class="link" href="video-detail.html">Let’s bring your ideas to life! Contact me, and let’s</a>
-              </h3>
-              <div class="more-btn tmp-link-animation">
-                <a href="video-detail.html" class="read-more-btn">Read More
-                  <span class="read-more-icon"><i class="fa-solid fa-angle-right"></i></span></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-6">
-          <div class="blog-card tmp-hover-link image-box-hover tmp-scroll-trigger tmp-fade-in animation-order-3">
-            <div class="img-box">
-              <a href="video-detail.html">
-                <img class="w-100" src="images/blog/blog-img-3.jpg" alt="Blog Thumbnail" />
-              </a>
-              <ul class="blog-tags">
-                <li>
-                  <span class="tag-icon"><i class="fa-regular fa-user"></i></span>Mesbah
-                </li>
-                <li>
-                  <span class="tag-icon"><i class="fa-solid fa-calendar-days"></i></span>April 10
-                </li>
-              </ul>
-            </div>
-            <div class="blog-content-wrap">
-              <h3 class="blog-title">
-                <a class="link" href="video-detail.html">Each one showcases my approach and dedication man</a>
-              </h3>
-              <div class="more-btn tmp-link-animation">
-                <a href="video-detail.html" class="read-more-btn">Read More
-                  <span class="read-more-icon"><i class="fa-solid fa-angle-right"></i></span></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Tpm Blog and news Area End -->
+      </section>
+      <%- include("footer") %>
 
-  <!-- Start Footer Area  -->
-  <footer class="footer-area footer-style-one-wrapper bg-color-footer bg_images tmp-section-gap">
-    <div class="container">
-      <div class="footer-main footer-style-one">
-        <div class="row g-5">
-          <div class="col-lg-5 col-md-6">
-            <div class="single-footer-wrapper border-right mr--20">
-              <div class="logo">
-                <a href="/">
-                  <img src="images/logo/white-logo-reeni.png" alt="Image for developers and freelancers" />
-                </a>
-              </div>
-              <p class="description">
-                <span>Đăng kí tư vấn dự án</span>
-              </p>
-              <form action="#" class="newsletter-form-1 mt--40">
-                <input type="email" placeholder="Email Adress" />
-                <span class="form-icon"><i class="fa-regular fa-envelope"></i></span>
-              </form>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="single-footer-wrapper quick-link-wrap">
-              <h5 class="ft-title">Quick Link</h5>
-              <ul class="ft-link tmp-link-animation">
-                <li>
-                  <a href="/">Trang chủ</a>
-                </li>
-                <li>
-                  <a href="project.html">Thông tin dự án</a>
-                </li>
-                <li>
-                  <a href="data.html">Bảng hàng</a>
-                </li>
-                <li>
-                  <a href="video.html">Video</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="single-footer-wrapper contact-wrap">
-              <h5 class="ft-title">Contact</h5>
-              <ul class="ft-link tmp-link-animation">
-                <li>
-                  <span class="ft-icon"><i class="fa-solid fa-envelope"></i></span><a href="#">longnasa88@gmail.com</a>
-                </li>
-                <li>
-                  <span class="ft-icon"><i class="fa-solid fa-location-dot"></i></span>Hà Nội
-                </li>
-                <li>
-                  <span class="ft-icon"><i class="fa-solid fa-phone"></i>
-                  </span>
-                  Liên hệ tôi: <a href="#">0375.122.388</a>
-                </li>
-                <li>
-                  <span class="ft-icon"><i class="fa-solid fa-phone"></i>
-                  </span>
-                  Trợ lí của tôi: <a href="#">0975.460.402</a>
-                </li>
-              </ul>
-              <div class="social-link footer">
-                <a href="https://t.me/longnasa"><i class="fa-brands fa-telegram"></i>
-                  <a href="https://www.tiktok.com/@longnasa"><i class="fa-brands fa-tiktok"></i></a>
-                  <a href="https://www.facebook.com/caohaithanhlong"><i class="fa-brands fa-facebook-f"></i></a>
-                  <a href="http://zalo.me/caohaithanhlong"><img src="images/icons/zalo.png" alt=""></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
+        <%- include("scroll") %>
 
-  <div class="copyright-area-one">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="main-wrapper">
-            <p class="copy-right-para tmp-link-animation">
-              ©<a href="/" target="_blank">ThemesPark
-              </a>
-              <script>
-                document.write(new Date().getFullYear());
-              </script>
-              | All Rights Reserved
-            </p>
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- End Footer Area  -->
-
-  <!-- progress area start -->
-  <div class="scrollToTop" style="display: block">
-    <div class="arrowUp">
-      <i class="fa-light fa-arrow-up"></i>
-    </div>
-    <div class="water" style="transform: translate(0px, 87%)">
-      <svg viewBox="0 0 560 20" class="water_wave water_wave_back">
-        <use xlink:href="#wave"></use>
-      </svg>
-      <svg viewBox="0 0 560 20" class="water_wave water_wave_front">
-        <use xlink:href="#wave"></use>
-      </svg>
-      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-        viewBox="0 0 560 20" style="display: none">
-        <symbol id="wave">
-          <path
-            d="M420,20c21.5-0.4,38.8-2.5,51.1-4.5c13.4-2.2,26.5-5.2,27.3-5.4C514,6.5,518,4.7,528.5,2.7c7.1-1.3,17.9-2.8,31.5-2.7c0,0,0,0,0,0v20H420z"
-            fill="#"></path>
-          <path
-            d="M420,20c-21.5-0.4-38.8-2.5-51.1-4.5c-13.4-2.2-26.5-5.2-27.3-5.4C326,6.5,322,4.7,311.5,2.7C304.3,1.4,293.6-0.1,280,0c0,0,0,0,0,0v20H420z"
-            fill="#"></path>
-          <path
-            d="M140,20c21.5-0.4,38.8-2.5,51.1-4.5c13.4-2.2,26.5-5.2,27.3-5.4C234,6.5,238,4.7,248.5,2.7c7.1-1.3,17.9-2.8,31.5-2.7c0,0,0,0,0,0v20H140z"
-            fill="#"></path>
-          <path
-            d="M140,20c-21.5-0.4-38.8-2.5-51.1-4.5c-13.4-2.2-26.5-5.2-27.3-5.4C46,6.5,42,4.7,31.5,2.7C24.3,1.4,13.6-0.1,0,0c0,0,0,0,0,0l0,20H140z"
-            fill="#"></path>
-        </symbol>
-      </svg>
-    </div>
-  </div>
-
-  <script src="https://longnasa.com/js/vendor/jquery.js"></script>
-  <script src="https://longnasa.com/js/vendor/jquery-ui.min.js"></script>
-  <script src="https://longnasa.com/js/vendor/waypoints.min.js"></script>
-  <script src="https://longnasa.com/js/plugins/odometer.js"></script>
-  <script src="https://longnasa.com/js/vendor/appear.js"></script>
-  <script src="https://longnasa.com/js/vendor/jquery-one-page-nav.js"></script>
-  <script src="https://longnasa.com/js/plugins/swiper.js"></script>
-  <script src="https://longnasa.com/js/plugins/axios.js"></script>
-  <script src="https://longnasa.com/js/plugins/gsap.js"></script>
-  <script src="https://longnasa.com/js/plugins/splittext.js"></script>
-  <script src="https://longnasa.com/js/plugins/scrolltigger.js"></script>
-  <script src="https://longnasa.com/js/plugins/scrolltoplugins.js"></script>
-  <script src="https://longnasa.com/js/plugins/smoothscroll.js"></script>
-  <script src="https://longnasa.com/js/vendor/bootstrap.min.js"></script>
-  <script src="https://longnasa.com/js/vendor/waw.js"></script>
-  <script src="https://longnasa.com/js/plugins/isotop.js"></script>
-  <script src="https://longnasa.com/js/plugins/animation.js"></script>
-  <script src="https://longnasa.com/js/plugins/contact.form.js"></script>
-  <script src="https://longnasa.com/js/vendor/backtop.js"></script>
-  <script src="https://longnasa.com/js/plugins/text-type.js"></script>
-  <script src="https://longnasa.com/js/main.js"></script>
-</body>
+          <%- include('script') %>
+  </body>
 
 </html>

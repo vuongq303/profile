@@ -1,9 +1,19 @@
 var app = require("../app");
 var debug = require("debug")("profile:server");
+const mysql = require("../database/sql");
+const dotenv = require("../config/dotenv");
 var http = require("http");
 
-var port = normalizePort(process.env.PORT || "3000");
+var port = normalizePort(dotenv.PORT);
 app.set("port", port);
+
+mysql.getConnection(function (err, connection) {
+  if (err) {
+    console.error("Error connecting: " + err.stack);
+    return;
+  }
+  console.log("Connected as id " + connection.threadId);
+});
 
 var server = http.createServer(app);
 
