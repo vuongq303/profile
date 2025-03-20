@@ -8,98 +8,41 @@
       <section class="tmp-latest-portfolio tmp-section-gap">
         <div class="container">
           <div class="row">
-            <div class="col-lg-6 col-md-6 col-12">
-              <div class="latest-portfolio-card v5 tmp-hover-link">
-                <div class="portfoli-card-img">
-                  <div class="img-box v2">
-                    <a href="project-details.html">
-                      <img class="img-primary hidden-on-mobile"
-                        src="<%-include('base')%>/images/latest-portfolio/tab-image-4.png" alt="Blog Thumbnail">
-                      <img class="img-secondary" src="<%-include('base')%>/images/latest-portfolio/tab-image-4.png"
-                        alt="BLog Thumbnail">
-                    </a>
+            <% for(var i=0; i<thong_tin_du_an.length; i++) { %>
+              <% let image=`images/project/${thong_tin_du_an[i].hinh_anh}`%>
+                <% let du_an=thong_tin_du_an[i] %>
+
+                  <div class="col-lg-6 col-sm-6">
+                    <div class="latest-portfolio-card tmp-hover-link tmp-scroll-trigger tmp-fade-in animation-order-1">
+                      <div class="portfoli-card-img">
+                        <div class="img-box v2">
+                          <a class="tmp-scroll-trigger tmp-zoom-in animation-order-1"
+                            href="/project/<%= du_an.endpoint %>">
+                            <img loading="lazy" class="img-project" src="<%= image %>" alt="Thumbnail" />
+                          </a>
+                        </div>
+                      </div>
+                      <div class="portfolio-card-content-wrap">
+                        <div class="content-left">
+                          <h3 class="portfolio-card-title">
+                            <a class="link" href="/project/<%= du_an.endpoint %>">
+                              <%= du_an.ten_du_an%>
+                            </a>
+                          </h3>
+                          <p class="portfoli-card-para">
+                            <%=du_an.mo_ta %>
+                          </p>
+                        </div>
+                        <a href="/project/<%= du_an.endpoint %>" class="tmp-arrow-icon-btn">
+                          <div class="btn-inner">
+                            <i class="tmp-icon fa-solid fa-arrow-up-right"></i>
+                            <i class="tmp-icon-bottom fa-solid fa-arrow-up-right"></i>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
                   </div>
-                </div>
-                <div class="portfolio-card-content-wrap">
-                  <div class="content-left">
-                    <h3 class="portfolio-card-title"><a class="link" href="project-details.html">Digital
-                        Transformation Advisors</a>
-                    </h3>
-                    <p class="portfoli-card-para"> Development Coaches</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6 col-md-6 col-12">
-              <div class="latest-portfolio-card v5 tmp-hover-link">
-                <div class="portfoli-card-img">
-                  <div class="img-box v2">
-                    <a href="project-details.html">
-                      <img class="img-primary hidden-on-mobile"
-                        src="<%-include('base')%>/images/latest-portfolio/tab-image-5.png" alt="Blog Thumbnail">
-                      <img class="img-secondary" src="<%-include('base')%>/images/latest-portfolio/tab-image-5.png"
-                        alt="BLog Thumbnail">
-                    </a>
-                  </div>
-                  <a href="project-details.html" class="img-link-icon"><i class="fa-solid fa-arrow-up-long"></i></a>
-                </div>
-                <div class="portfolio-card-content-wrap">
-                  <div class="content-left">
-                    <h3 class="portfolio-card-title"><a class="link" href="project-details.html">Digital
-                        Transformation Advisors</a>
-                    </h3>
-                    <p class="portfoli-card-para"> Development Coaches</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6 col-md-6 col-12">
-              <div class="latest-portfolio-card v5 tmp-hover-link">
-                <div class="portfoli-card-img">
-                  <div class="img-box v2">
-                    <a href="project-details.html">
-                      <img class="img-primary hidden-on-mobile"
-                        src="<%-include('base')%>/images/latest-portfolio/tab-image-6.png" alt="Blog Thumbnail">
-                      <img class="img-secondary" src="<%-include('base')%>/images/latest-portfolio/tab-image-6.png"
-                        alt="BLog Thumbnail">
-                    </a>
-                  </div>
-                  <a href="project-details.html" class="img-link-icon"><i class="fa-solid fa-arrow-up-long"></i></a>
-                </div>
-                <div class="portfolio-card-content-wrap">
-                  <div class="content-left">
-                    <h3 class="portfolio-card-title"><a class="link" href="project-details.html">Digital
-                        Transformation Advisors</a>
-                    </h3>
-                    <p class="portfoli-card-para"> Development Coaches</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6 col-md-6 col-12">
-              <div class="latest-portfolio-card v5 tmp-hover-link">
-                <div class="portfoli-card-img">
-                  <div class="img-box v2">
-                    <a href="project-details.html">
-                      <img class="img-primary hidden-on-mobile"
-                        src="<%-include('base')%>/images/latest-portfolio/tab-image-7.png" alt="Blog Thumbnail">
-                      <img class="img-secondary" src="<%-include('base')%>/images/latest-portfolio/tab-image-7.png"
-                        alt="BLog Thumbnail">
-                    </a>
-                  </div>
-                  <a href="<%-include('base')%>/project-details.html" class="img-link-icon"><i
-                      class="fa-solid fa-arrow-up-long"></i></a>
-                </div>
-                <div class="portfolio-card-content-wrap">
-                  <div class="content-left">
-                    <h3 class="portfolio-card-title"><a class="link" href="project-details.html">Digital
-                        Transformation Advisors</a>
-                    </h3>
-                    <p class="portfoli-card-para"> Development Coaches</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+                  <% } %>
           </div>
         </div>
       </section>
