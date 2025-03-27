@@ -17,7 +17,7 @@ router.post("/send-email", async function (req, res) {
       text: `Tên: ${name}\nSố điện thoại: ${tel}\nLời nhắn: ${message}\nEmail: ${email}\nDự án quan tâm: ${project}`,
     };
 
-    // await emailTrans.sendMail(mailOptions);
+     await emailTrans.sendMail(mailOptions);
     return res.render("submit-email", {
       message1: `Yêu cầu của anh chị đã được tiếp nhận`,
       message2: "tôi sẽ phản hồi yêu cầu này sớm nhất. Xin cảm ơn.",

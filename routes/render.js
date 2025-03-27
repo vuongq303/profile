@@ -17,7 +17,7 @@ router.get("/", async function (req, res) {
   }
 });
 
-router.get("/video.html", function (req, res, next) {
+router.get("/video", function (req, res, next) {
   res.render("video");
 });
 
@@ -25,7 +25,7 @@ router.get("/video-detail.html", function (req, res, next) {
   res.render("video-detail");
 });
 
-router.get("/project/:endpoint", async function (req, res, next) {
+router.get("/du-an/:endpoint", async function (req, res, next) {
   try {
     const endpoint = req.params.endpoint;
     const sql = "SELECT * FROM thong_tin_du_an WHERE endpoint = ?";
@@ -33,6 +33,7 @@ router.get("/project/:endpoint", async function (req, res, next) {
     res.render("project-details", {
       ten_du_an: result.ten_du_an,
       hinh_anh: result.hinh_anh,
+      file: endpoint,
     });
   } catch (error) {
     console.error("/index", error.message);
@@ -43,7 +44,7 @@ router.get("/project/:endpoint", async function (req, res, next) {
   }
 });
 
-router.get("/project.html", async function (req, res, next) {
+router.get("/du-an", async function (req, res, next) {
   try {
     const sql = "SELECT * FROM thong_tin_du_an WHERE isShow=1";
     const result = await executeQuery(sql);
@@ -58,11 +59,15 @@ router.get("/project.html", async function (req, res, next) {
   }
 });
 
-router.get("/contact.html", function (req, res, next) {
+router.get("/project/vinhomes-wonder-city", function (req, res, next) {
+  res.redirect("/du-an/vinhomes-wonder-city");
+});
+
+router.get("/lien-he", function (req, res, next) {
   res.render("contact");
 });
 
-router.get("/data.html", function (req, res, next) {
+router.get("/bang-hang", function (req, res, next) {
   res.render("data");
 });
 

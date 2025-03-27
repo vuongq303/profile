@@ -2338,7 +2338,7 @@ body .elementor-47 .elementor-element.elementor-element-93c7756 .elementor-label
 
 .elementor-47 .elementor-element.elementor-element-4fb91097:not(.elementor-motion-effects-element-type-background),
 .elementor-47 .elementor-element.elementor-element-4fb91097>.elementor-motion-effects-container>.elementor-motion-effects-layer {
-    background-image: url("../../images/wdc/phoi-canh-chung-cu-tai-vinhomes-dan-phuong.jpg");
+    background-image: url("../../images/the-cosmo/st.jpg");
     background-position: top right;
     background-size: cover
 }
@@ -2435,7 +2435,7 @@ body .elementor-47 .elementor-element.elementor-element-93c7756 .elementor-label
 
 .elementor-47 .elementor-element.elementor-element-81b4f4d:not(.elementor-motion-effects-element-type-background),
 .elementor-47 .elementor-element.elementor-element-81b4f4d>.elementor-motion-effects-container>.elementor-motion-effects-layer {
-    background-image: url("../../images/wdc/don-lap-vinhomes-wonder-city.jpg");
+    background-image: url("../../images/the-cosmo/1pn.jpg");
     background-position: top right;
     background-size: cover
 }
@@ -2532,7 +2532,7 @@ body .elementor-47 .elementor-element.elementor-element-93c7756 .elementor-label
 
 .elementor-47 .elementor-element.elementor-element-ad00b72:not(.elementor-motion-effects-element-type-background),
 .elementor-47 .elementor-element.elementor-element-ad00b72>.elementor-motion-effects-container>.elementor-motion-effects-layer {
-    background-image: url("../../images/wdc/song-lap-vinhomes-wonder-city.jpg");
+    background-image: url("../../images/the-cosmo/2pn.jpg");
     background-position: center left;
     background-size: cover
 }
@@ -2629,7 +2629,7 @@ body .elementor-47 .elementor-element.elementor-element-93c7756 .elementor-label
 
 .elementor-47 .elementor-element.elementor-element-ea4648a:not(.elementor-motion-effects-element-type-background),
 .elementor-47 .elementor-element.elementor-element-ea4648a>.elementor-motion-effects-container>.elementor-motion-effects-layer {
-    background-image: url("../../images/wdc/lien-ke-vinhomes-wonder-city.jpg");
+    background-image: url("../../images/the-cosmo/3pn.jpg");
     background-position: top right;
     background-size: cover
 }
@@ -2726,7 +2726,7 @@ body .elementor-47 .elementor-element.elementor-element-93c7756 .elementor-label
 
 .elementor-47 .elementor-element.elementor-element-b76cc06:not(.elementor-motion-effects-element-type-background),
 .elementor-47 .elementor-element.elementor-element-b76cc06>.elementor-motion-effects-container>.elementor-motion-effects-layer {
-    background-image: url("../../images/wdc/shophouse-vinhomes-wonder-city-dan-phuong.jpg");
+    background-image: url("../../images/the-cosmo/4pn.jpg");
     background-position: center left;
     background-size: cover
 }
@@ -3216,13 +3216,6 @@ body .elementor-47 .elementor-element.elementor-element-3a4655a .elementor-label
     --border-radius: 12px
 }
 
-.elementor-47 .elementor-element.elementor-element-739ca15d:not(.elementor-motion-effects-element-type-background),
-.elementor-47 .elementor-element.elementor-element-739ca15d>.elementor-motion-effects-container>.elementor-motion-effects-layer {
-    background-image: url("../../images/wdc/don-lap-vinhomes-wonder-city.jpg");
-    background-position: center center;
-    background-size: cover
-}
-
 .elementor-47 .elementor-element.elementor-element-739ca15d,
 .elementor-47 .elementor-element.elementor-element-739ca15d:before {
     --border-transition: .3s
@@ -3272,12 +3265,7 @@ body .elementor-47 .elementor-element.elementor-element-3a4655a .elementor-label
     --border-radius: 12px
 }
 
-.elementor-47 .elementor-element.elementor-element-8300a2d:not(.elementor-motion-effects-element-type-background),
-.elementor-47 .elementor-element.elementor-element-8300a2d>.elementor-motion-effects-container>.elementor-motion-effects-layer {
-    background-image: url("../../images/wdc/song-lap-vinhomes-wonder-city.jpg");
-    background-position: center left;
-    background-size: cover
-}
+
 
 .elementor-47 .elementor-element.elementor-element-8300a2d,
 .elementor-47 .elementor-element.elementor-element-8300a2d:before {
@@ -3407,12 +3395,7 @@ body .elementor-47 .elementor-element.elementor-element-3a4655a .elementor-label
     --border-radius: 12px
 }
 
-.elementor-47 .elementor-element.elementor-element-91a477b:not(.elementor-motion-effects-element-type-background),
-.elementor-47 .elementor-element.elementor-element-91a477b>.elementor-motion-effects-container>.elementor-motion-effects-layer {
-    background-image: url("../../images/wdc/lien-ke-vinhomes-wonder-city.jpg");
-    background-position: center center;
-    background-size: cover
-}
+
 
 .elementor-47 .elementor-element.elementor-element-91a477b,
 .elementor-47 .elementor-element.elementor-element-91a477b:before {
@@ -3464,12 +3447,7 @@ body .elementor-47 .elementor-element.elementor-element-3a4655a .elementor-label
     --border-radius: 12px
 }
 
-.elementor-47 .elementor-element.elementor-element-52df5d8:not(.elementor-motion-effects-element-type-background),
-.elementor-47 .elementor-element.elementor-element-52df5d8>.elementor-motion-effects-container>.elementor-motion-effects-layer {
-    background-image: url("../../images/wdc/shophouse-vinhomes-wonder-city-dan-phuong.jpg");
-    background-position: center left;
-    background-size: cover
-}
+
 
 .elementor-47 .elementor-element.elementor-element-52df5d8,
 .elementor-47 .elementor-element.elementor-element-52df5d8:before {
@@ -3599,12 +3577,6 @@ body .elementor-47 .elementor-element.elementor-element-3a4655a .elementor-label
     --border-radius: 12px
 }
 
-.elementor-47 .elementor-element.elementor-element-570530a:not(.elementor-motion-effects-element-type-background),
-.elementor-47 .elementor-element.elementor-element-570530a>.elementor-motion-effects-container>.elementor-motion-effects-layer {
-    background-image: url("../../images/wdc/phoi-canh-chung-cu-tai-vinhomes-dan-phuong.jpg");
-    background-position: center center;
-    background-size: cover
-}
 
 .elementor-47 .elementor-element.elementor-element-570530a,
 .elementor-47 .elementor-element.elementor-element-570530a:before {
@@ -3742,12 +3714,6 @@ body .elementor-47 .elementor-element.elementor-element-3a4655a .elementor-label
     --border-radius: 12px
 }
 
-.elementor-47 .elementor-element.elementor-element-b9269b2:not(.elementor-motion-effects-element-type-background),
-.elementor-47 .elementor-element.elementor-element-b9269b2>.elementor-motion-effects-container>.elementor-motion-effects-layer {
-    background-image: url("../../images/wdc/mat-bang-phan-khu-hung-dong-1010x1024.jpg");
-    background-position: center center;
-    background-size: cover
-}
 
 .elementor-47 .elementor-element.elementor-element-b9269b2,
 .elementor-47 .elementor-element.elementor-element-b9269b2:before {
@@ -3796,13 +3762,6 @@ body .elementor-47 .elementor-element.elementor-element-3a4655a .elementor-label
     --flex-wrap-mobile: wrap;
     --background-transition: .3s;
     --border-radius: 12px
-}
-
-.elementor-47 .elementor-element.elementor-element-7e0f1ae:not(.elementor-motion-effects-element-type-background),
-.elementor-47 .elementor-element.elementor-element-7e0f1ae>.elementor-motion-effects-container>.elementor-motion-effects-layer {
-    background-image: url("../../images/wdc/mat-bang-phan-khu-binh-minh.jpg");
-    background-position: center left;
-    background-size: cover
 }
 
 .elementor-47 .elementor-element.elementor-element-7e0f1ae,

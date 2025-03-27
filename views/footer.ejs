@@ -5,7 +5,7 @@
                 <div class="col-lg-5 col-md-6">
                     <div class="single-footer-wrapper border-right mr--20">
                         <div class="logo">
-                            <a href="/">
+                            <a href="<%-include('base')%>">
                                 <img loading="lazy" src="<%-include('base')%>/images/logo/white-logo-reeni.png"
                                     alt="Image for developers and freelancers" />
                             </a>
@@ -13,9 +13,10 @@
                         <p class="description">
                             <span>Đăng kí tư vấn dự án</span>
                         </p>
-                        <form action="#" class="newsletter-form-1 mt--40">
-                            <input type="email" placeholder="Email Adress" />
-                            <span class="form-icon"><i class="fa-regular fa-envelope"></i></span>
+                        <form class="newsletter-form-1 mt--40 send-email" method="POST">
+                            <input type="email" name="email" placeholder="Email Adress" />
+                            <button type="submit"><span class="form-icon"><i
+                                        class="fa-regular fa-envelope"></i></span></button>
                         </form>
                     </div>
                 </div>
@@ -24,16 +25,16 @@
                         <h5 class="ft-title">Quick Link</h5>
                         <ul class="ft-link tmp-link-animation">
                             <li>
-                                <a href="/">Trang chủ</a>
+                                <a href="<%-include('base')%>">Trang chủ</a>
                             </li>
                             <li>
-                                <a href="project.html">Thông tin dự án</a>
+                                <a href="<%-include('base')%>/du-an">Thông tin dự án</a>
                             </li>
                             <li>
-                                <a href="data.html">Bảng hàng</a>
+                                <a href="<%-include('base')%>/bang-hang">Bảng hàng</a>
                             </li>
                             <li>
-                                <a href="video.html">Video</a>
+                                <a href="<%-include('base')%>/video">Video</a>
                             </li>
                         </ul>
                     </div>
@@ -65,7 +66,8 @@
                                 <a href="https://www.tiktok.com/@longnasa"><i class="fa-brands fa-tiktok"></i></a>
                                 <a href="https://www.facebook.com/caohaithanhlong"><i
                                         class="fa-brands fa-facebook-f"></i></a>
-                                <a href="http://zalo.me/caohaithanhlong"><img loading="lazy" src="<%-include('base')%>/images/icons/zalo.png" alt=""></a>
+                                <a href="http://zalo.me/caohaithanhlong"><img loading="lazy"
+                                        src="<%-include('base')%>/images/icons/zalo.png" alt=""></a>
                         </div>
                     </div>
                 </div>
